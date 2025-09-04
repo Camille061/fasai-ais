@@ -77,7 +77,7 @@ display: flex;
 }
 
 .top-head {
-font-family: "Google Sans Code", monospace;
+     font-family: "Kanit", sans-serif;
 }
 
 .box-head {
@@ -110,12 +110,16 @@ margin-top: 5px;
     padding: 5px;
     width: 50px;
      font-family: "Kanit", sans-serif;
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: bold;
 }
 
 #list-button:hover {
-      transform: scale(1.1);
+   transform: scale(1.1); /* ขยายขึ้น */
+   box-shadow: 0 0 10px rgba(95, 174, 0, 0.6); /* เพิ่มเงาเรือง ๆ */
+   background: linear-gradient(to bottom, #bafc28, #6ed600); /* สีสดขึ้น */
 }
-
 .list-menu {
   text-align: center;
 
