@@ -60,7 +60,7 @@ display: flex;
     margin: 0 auto;
     text-align: center;
     max-width: 250px;
-    height: 176px;
+    height: 200px;
     border-radius: 10px;
     margin-top: 20px;
     color:#747c7d;
@@ -69,8 +69,7 @@ display: flex;
 }
 
 .title-box {
-  color: #96cb00;;
-font-family: "Kanit", sans-serif;
+  color: #7eac00;;
 }
 
 .internet-box {
