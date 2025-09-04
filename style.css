@@ -77,8 +77,19 @@ display: flex;
 }
 
 .top-head {
-     font-family: "Kanit", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  display: inline-block;
+  animation: wiggle 1s ease-in-out infinite;
 }
+
+@keyframes wiggle {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
 
 .box-head {
     border-radius: 10px;
