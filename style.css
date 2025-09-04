@@ -25,7 +25,7 @@
 }
 
 .logo-ais {
-  width: 60px;
+max-width: 60px;
     height: 40px;
 }
 
