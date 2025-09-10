@@ -144,6 +144,7 @@ margin-top: 5px;
 }
 .list-menu {
   text-align: center;
+  
 
   margin-top: 10px;
 }
@@ -180,7 +181,7 @@ align-items: center;
 padding: 15px 
 }
 ul li a:hover {
-  background-color: aqua;
+  background-color:#64c102;
 }
 ul li a i {
 width: 35px;
