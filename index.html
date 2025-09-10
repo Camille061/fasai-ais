@@ -17,11 +17,14 @@
     <img class="logo-ais" src="img/iconais.png" alt="">
 </div>
 
-
 <body>
 
     <div class="sidebar">
         <ul>
+           <li><a href="">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span></span>
+           </a></li>
             <li><a href="1day.html">
                     <i class="fa-solid fa-list"></i>
                 <span>รายการ</span>
@@ -31,12 +34,41 @@
                 <span>มาแรง</span>
             </a></li>
              <li><a href="">
-      
-                <span>home</span>
+      <i class="fa-solid fa-moon"></i>
+                <span>Theme</span>
+                
+  <label class="switch">
+    <input type="checkbox" id="darkToggle">
+    <span class="slider"></span>
+  </label>
+
+  <script>
+    const toggle = document.getElementById("darkToggle");
+    toggle.addEventListener("change", () => {
+      document.body.classList.toggle("dark", toggle.checked);
+    });
+  </script>
             </a></li>
         </ul>
     </div>
-    
+
+        <div class="top-box-head">
+        <div class="box-head">
+            <h2>เน็ต AIS แนะนำ</h2>
+            <p>โปรเน็ตยอดนิยมเน็ต ไม่ลดสปีด AIS วันทูคอล <br>สมัครง่ายผ่านมือถือ
+                เติมเงินแล้วกดสมัครได้เลยค่ะ</p>
+        </div>
+    </div>
+    <div>
+
+            <div class="list-menu">
+        <a id="list-button"  href="index.html">มาแรง!</a>
+<a id="list-button"  href="1day.html">1 วัน</a>
+<a id="list-button"  href="2day.html">2 วัน</a>
+<a id="list-button"  href="3day.html">3 วัน</a>
+<a id="list-button"  href="7day.html">7 วัน</a>
+<a id="list-button"  href="30day.html">30 วัน</a>
+   
 </body>
 
 </html>

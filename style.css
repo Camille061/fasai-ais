@@ -151,20 +151,25 @@ margin-top: 5px;
 * a {
   text-decoration: none;
   color: #ffffff;
+  font-weight: bold;
 }
 
 .sidebar {
 width: 40px;
-background: linear-gradient(to right, #c6ff4a, #6ed600);
-background-color: #6ed600;
+background: linear-gradient(to right, #6ed600, #baff6f);
 border-radius: 10px;
 min-height: 100vh;
 overflow: hidden;
+position: fixed;
+display: grid;
+grid-template-columns: 100px 1fr;
 }
+
 .sidebar:hover {
   width: 200px;
   transition: .3s;
 }
+
 .sidebar:hover ul li a span {
   opacity: 1;
   visibility: visible;
@@ -186,6 +191,66 @@ ul li a span {
   visibility: 0;
   transition: .3s ease-in;
 }
+
+   body {
+      font-family: sans-serif;
+      transition: background 0.4s, color 0.4s;
+      background: #fff;
+      color: #292929;
+    }
+
+    body.dark {
+      background: #292929;
+      color: #f1f1f1;
+    }
+
+    /* Toggle switch */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 28px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 28px;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.4s;
+    }
+
+    input:checked + .slider {
+      background-color: #4caf50;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(22px);
+    }
+
+ 
 /* git init
 git add .
 git commit -m "first commit"
