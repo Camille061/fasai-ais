@@ -38,6 +38,10 @@ display: flex;
     margin-left: 10px;
 }
 
+aside {
+  display: flex;
+}
+
 .btn1 {
     border: none;
     background :#96cb00;
@@ -144,6 +148,44 @@ margin-top: 5px;
   margin-top: 10px;
 }
 
+* a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sidebar {
+width: 40px;
+background: linear-gradient(to right, #c6ff4a, #6ed600);
+background-color: #6ed600;
+border-radius: 10px;
+min-height: 100vh;
+overflow: hidden;
+}
+.sidebar:hover {
+  width: 200px;
+  transition: .3s;
+}
+.sidebar:hover ul li a span {
+  opacity: 1;
+  visibility: visible;
+}
+ul li a {
+display: flex;
+align-items: center;
+padding: 15px 
+}
+ul li a:hover {
+  background-color: aqua;
+}
+ul li a i {
+width: 35px;
+}
+ul li a span {
+  margin-left: 10px;
+  opacity: 0;
+  visibility: 0;
+  transition: .3s ease-in;
+}
 /* git init
 git add .
 git commit -m "first commit"
