@@ -34,8 +34,9 @@ display: flex;
 }
 
 .text-theme {
+  margin: 0 auto;
+  text-align: right;
   font-size: large;
-  margin-left: 50px;
   font-family: "Kanit", sans-serif;
 }
 

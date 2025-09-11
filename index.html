@@ -15,6 +15,22 @@
     <img class="logo" src="img/logo.jpg" alt="">
     <h2 class="top-head" style="margin-left: 10px; color: rgb(45, 45, 45); ">Pandy Intenet</h2>
     <img class="logo-ais" src="img/iconais.png" alt="">
+
+         <span class="text-theme"></span>
+         <i class="fa-solid fa-moon"></i>
+     <label class="switch">
+    <input type="checkbox" id="darkToggle">
+    <span class="slider"></span>
+  </label>
+
+   <script>
+    const toggle = document.getElementById("darkToggle");
+    toggle.addEventListener("change", () => {
+      document.body.classList.toggle("dark", toggle.checked);
+    });
+  </script>
+</div>
+
 </div>
 
 <body>
@@ -25,26 +41,18 @@
             <i class="fa-solid fa-arrow-right"></i>
            </a></li>
              <li><a href="hot.html">
-                <i class="fa-solid fa-fire"></i>
-                <span>ฮิต!</span>
+                <i class="fa-regular fa-thumbs-up"></i>
+
+                <span>AIS</span>
             </a></li>
              <li><a href="#">
-      <i class="fa-solid fa-moon"></i>
-                <span>ธีม</span>
-                
-  <label class="switch">
-    <input type="checkbox" id="darkToggle">
-    <span class="slider"></span>
-  </label>
-
-  <script>
-    const toggle = document.getElementById("darkToggle");
-    toggle.addEventListener("change", () => {
-      document.body.classList.toggle("dark", toggle.checked);
-    });
-  </script>
+                  <i class="fa-solid fa-fire"></i>
+                <span>TRUE</span>
             </a></li>
-            <li><a href=""></a></li>
+            <li><a href="">
+                <i class="fa-regular fa-cloud"></i>
+                <span>DTAC</span>
+            </a></li>
         </ul>
     </div>
 
